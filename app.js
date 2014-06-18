@@ -7,7 +7,7 @@ var logger = require('morgan');
 var bodyParser = require('body-parser');
 
 
-var databaseUrl = "mongodb://yanipra:d1200pyani@dbh63.mongolab.com:27637/pemilba"; 
+var databaseUrl = "mongodb://<user>:<password>@dbh63.mongolab.com:27637/pemilba"; 
 var collections = ["news"]
 var db = require("mongojs").connect(databaseUrl, collections);
 
