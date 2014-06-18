@@ -1,0 +1,34 @@
+
+
+<div id="position">
+    	 {{{body}}}
+		 {{#each entries}}
+			 <p>
+			 <a href="/article/{{_id}}">{{title}}</a><br/>
+			  <p>{{body}}</p><br/>
+			  Published: {{published}}
+			 </p>
+		{{/each}}	
+</div>
+<div id="position2">
+		<h1>add form</h1>   
+    	<form method="post" action="/adddata">
+    		Title:
+    		<div class="form-group">
+				<input type="text" name="title">
+			</div>
+			Isi:
+			<div class="form-group">
+		    	<textarea id="body" name="isi" rows="10"></textarea>
+		    </div>
+		    
+			Date: <input  type="text" placeholder="click to show datepicker" name="example1" id="example1">
+		    <div class="form-group">
+		    	<input type="submit">
+		    </div>
+		</form>
+</div>
+
+
+
+

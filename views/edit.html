@@ -1,0 +1,30 @@
+<!-- <form method="post" action="/updatedata">
+    <div class="form-group">
+        <label for="inputEmail">Title</label>
+        <input type="text" class="form-control" id="title" placeholder="{{blog.title}}">
+    </div>
+    <div class="form-group">
+        <label for="inputPassword">ISI</label>
+        <textarea class="form-control" id="body" rows="3">{{blog.body}}</textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">UPDATE</button>
+    <button type="submit" class="btn btn-primary">CANCEL</button>
+</form> -->
+
+<form method="post" action="/updatedata">
+    <div class="form-group">
+        <input type="hidden" name="id" value="{{blog._id}}">
+    </div>
+    <div class="form-group">
+        <input type="text" name="title" value="{{blog.title}}">
+    </div>
+    <div class="form-group">
+        <textarea id="body"name="isi" rows="3">{{blog.body}}</textarea>
+    </div>
+    <div class="form-group">
+        <input type="text" id="example1" name="date" value="{{blog.published}}">
+    </div>
+    <div class="form-group">
+        <input type="submit">
+    </div>
+</form>

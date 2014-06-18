@@ -1,0 +1,29 @@
+{
+  "name": "helloHerokuMongoDb",
+  "version": "0.0.0",
+  "description": "Heroku and MonggoDB Connection.... :P",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yani89/HerokuMonggoDb.git"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.3.1",
+    "express": "^4.4.3",
+    "hbs": "^2.7.0",
+    "jade": "^1.3.1",
+    "logfmt": "^1.1.2",
+    "mongo": "^0.1.0",
+    "mongodb": "^1.4.6",
+    "mongojs": "^0.13.0",
+    "morgan": "^1.1.1"
+  }
+}
